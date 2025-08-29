@@ -1,0 +1,92 @@
+/* Importando uma fonte do Google Fonts para se aproximar do design */
+@import url('[https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap)');
+
+header {
+  width: 100%;
+  background-color: var(--branco); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+/* Estilização da barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1280px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+}
+
+.navbar a img {
+  width: 80px;
+  height: auto;
+}
+
+/* Estilo do container dos links de navegação */
+.nav-links {
+  display: flex;
+  gap: 100px;
+}
+
+/* Estilo de cada link de navegação */
+.nav-links a {
+  text-decoration: none;
+  color: var(--cinza-escuro);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.4s ease;
+}
+
+.nav-links a:hover {
+  color: var(--azul-marinho);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--azul-marinho);
+  transition: width 0.4s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.contact-btn {
+  background-color: var(--azul-marinho);
+  color: var(--branco);
+  border-radius: 60px; 
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s ease-in-out;
+  
+  /* A altura é controlada APENAS aqui. Ajuste o primeiro valor como quiser. */
+  padding: 10px 20px; 
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 14px;
+  font-weight: 500;
+  gap: 6px;
+  line-height: 1;
+}
+
+.contact-btn .btn-icon {
+  width: 24px;
+}
+
+.contact-btn:hover {
+  background-color: var(--azul-marinho);
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

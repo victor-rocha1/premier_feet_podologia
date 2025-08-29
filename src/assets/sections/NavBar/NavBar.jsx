@@ -1,5 +1,6 @@
 import logo from './logo.png';
 import './navbar.css';
+import imgChat from './icon-message.png'
 
 function NavBar() {
 
@@ -13,22 +14,16 @@ function NavBar() {
         <div className="nav-links">
           <a href="#about">Sobre</a>
           <a href="#nossos-servicos">Nossos Serviços</a>
-          <a href="#projects">Endereço</a>
-          <a href="#Dúvidas">Experiências</a>
+          <a href="#endereco">Endereço</a>
+          <a href="#duvidas">Dúvidas</a>
         </div>
+
+        <a href="#contato" className="contact-btn">
+          ENTRE EM CONTATO
+          <img className="btn-icon" src={imgChat} alt="ícone de contato" />
+        </a>
 
       </nav>
-
-      <div className='side-menu'>
-        <div className="side-menu-header">
-          <button className="close-menu">X</button>
-        </div>
-        <a href="#">Home</a>
-        <a href="#about">Sobre Mim</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projetos</a>
-        <a href="#experiences">Experiências</a>
-      </div>
     </header>
   );
 }
