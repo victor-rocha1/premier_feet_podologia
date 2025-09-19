@@ -4,7 +4,6 @@ body.menu-open {
 
 header {
   width: 100%;
-  background-color: var(--branco);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 999; /* z-index baixo para que o overlay e o menu fiquem na frente dele. */
