@@ -46,7 +46,7 @@ header {
 
 .nav-links a:hover,
 .sidebar a:hover {
-  color: var(--azul-marinho);
+  color: var(--verde-agua);
 }
 
 .nav-links a::after,
@@ -57,7 +57,7 @@ header {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: var(--azul-marinho);
+  background-color: var(--verde-agua);
   transition: width 0.4s ease;
 }
 
@@ -68,7 +68,7 @@ header {
 
 /* Estilização do botão "ENTRE EM CONTATO". */
 .contact-btn {
-  background-color: var(--azul-marinho);
+  background-color: var(--verde-agua);
   color: var(--branco);
   border-radius: 60px;
   text-decoration: none;
@@ -89,7 +89,7 @@ header {
 }
 
 .contact-btn:hover {
-  background-color: var(--azul-marinho);
+  background-color: var(--verde-agua);
   transform: translateY(-2px);
   opacity: 0.9;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
