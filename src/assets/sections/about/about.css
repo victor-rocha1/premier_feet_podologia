@@ -1,34 +1,51 @@
+.title-clinica {
+  display: flex;
+  flex-direction: column; /* empilha h2 e p na vertical */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+.title-clinica h2,
+.title-clinica p {
+  margin: 0;   /* margem entre o h2 e o p */
+}
+
 .about-container {
-    display: flex;
+    font-size: 1rem;
+    display: flex;  /* texto e card lado a lado */
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
+    align-items: center;  /* onde o texto e card ficam na tela */
+    gap: 3rem;
     margin: 2rem auto;
     max-width: 1200px;
+    width: 85%;
     padding: 1rem;
 }
 
+
 /* Texto */
 .txt_about {
-    flex: 1;
+    flex: 1; /* ocupa todo o espaço disponível */
 }
 
 .txt_about h2 {
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .txt_about p {
     margin-bottom: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Wrapper do card (pra sobrepor) */
-.card-wrapper {
+.div-card {
     position: relative;
     width: 350px;
     height: 360px; /* altura maior pra caber o deslocamento do verde */
-    flex-shrink: 0;
+    flex-shrink: 0; /* para não encolher na responsividade */
 }
 
 /* Card base */
@@ -47,7 +64,7 @@
 .card-green {
     width: 341px;
     height: 350px;
-    background-color: #008b8b; /* verde água */
+    background-color: var(--verde-agua);
     top: 15px;   /* desce o card verde */
     left: 15px;  /* desloca pra direita */
     z-index: 0;
@@ -64,16 +81,3 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* deixa flutuando */
 }
 
-/* Responsivo */
-@media (max-width: 900px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-wrapper {
-        width: 300px;
-        height: 300px;
-        margin-top: 1.5rem;
-    }
-}

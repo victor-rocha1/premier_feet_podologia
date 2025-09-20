@@ -1,12 +1,12 @@
 :root {
   background-color: #f3f0f0;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   font-family: Inter;
   font-weight: 400;
 
   /* Modo Normal */
   --branco: #fff;
-  --azul-marinho: #0C7D81;
+  --verde-agua: #0C7D81;
   --cinza-escuro: #333;
 }

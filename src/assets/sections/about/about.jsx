@@ -31,7 +31,7 @@ function About() {
                 </div>
 
                 {/* Card duplo: branco na frente, verde atrás */}
-                <div className="card-wrapper">
+                <div className="div-card">
                     <div className="card card-green"></div>
                     <div className="card card-white">
                         <p>Foto</p>
