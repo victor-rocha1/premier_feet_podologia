@@ -38,6 +38,7 @@
     font-size: 1rem;
     gap: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .map-container {
