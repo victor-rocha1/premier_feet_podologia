@@ -16,6 +16,28 @@
   font-size: 1.5rem; 
   /* color: var(--cinza-escuro);  */
   margin-bottom: 40px;
+  padding-bottom: 10px;
   margin-top: 0;
   text-align: center; 
+}
+
+/* Responsividade */
+@media (max-width: 900px) { 
+    .section-title{
+      padding: 60px;
+    }
+}
+
+@media (max-width: 800px) { 
+    .section-title{
+      padding: 30px;
+      margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .section-title{
+      padding: 20px;
+      margin-bottom: 10px;
+    }
 }
