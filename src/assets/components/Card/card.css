@@ -21,7 +21,6 @@
     width: calc(100% - 10px); 
     height: calc(100% - 10px); 
     top: 15px;
-    left: 15px;
     background-color: var(--verde-agua);
     border-radius: 12px;
     display: flex;
@@ -31,3 +30,41 @@
     z-index: 0;
 }
 
+
+/* Responsividade */
+@media (max-width: 850px) {
+    .card-container {
+        width: 90%; 
+        gap: 50px; 
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+
+    .div-card-servicos {
+        width: 200px;   
+        height: 200px; 
+    }
+}
+
+@media (max-width: 730px) {
+    .card-container {
+        gap: 50px; 
+        grid-template-columns: repeat(auto-fit, 180px);
+    }
+
+    .div-card-servicos {
+        width: 180px;   
+        height: 180px; 
+    }
+}
+
+@media (max-width: 730px) {
+    .card-container {
+        gap: 30px; 
+        grid-template-columns: repeat(auto-fit, 150px);
+    }
+
+    .div-card-servicos {
+        width: 150px;   
+        height: 150px; 
+    }
+}
