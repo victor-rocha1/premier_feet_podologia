@@ -1,7 +1,9 @@
+import "./card.css"
+
 function Card({ txt }) {
   return (
-    <div className="div-card">
-      <div className="card card-green">
+    <div className="div-card-servicos">
+      <div className="card-servicos">
         <p>{txt}</p>
       </div>
     </div>

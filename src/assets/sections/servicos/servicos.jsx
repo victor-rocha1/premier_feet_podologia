@@ -3,21 +3,18 @@ import './servicos.css';
 
 function Servicos() {
     return (
-        <>
-            <div className="servicos-container">
-                <h2>Nossos Serviços</h2>
-            </div>
+        <div className="servicos-container">
+            <h2>NOSSOS SERVIÇOS</h2>
 
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-            <Card txt="teste" />
-        </>
+            <div className="card-container"> 
+                <Card txt="teste" />
+                <Card txt="teste" />
+                <Card txt="teste" />
+                <Card txt="teste" />
+                <Card txt="teste" />
+                <Card txt="teste" />
+            </div>
+        </div>
     );
 }
 
