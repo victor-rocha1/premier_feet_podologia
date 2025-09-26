@@ -4,7 +4,7 @@ import './servicos.css';
 function Servicos() {
     return (
         <div className="servicos-container">
-            <h2>NOSSOS SERVIÇOS</h2>
+            <h2 className="section-title">NOSSOS SERVIÇOS</h2>
 
             <div className="card-container"> 
                 <Card txt="teste" />

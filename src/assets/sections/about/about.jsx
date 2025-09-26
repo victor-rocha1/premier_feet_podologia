@@ -5,7 +5,7 @@ function About() {
         <>
             <div className="about">
                 <div className="title-clinica">
-                    <h2>PREMIER FEET PODOLOGIA</h2>
+                    <h1>PREMIER FEET PODOLOGIA</h1>
                     <p>O melhor atendimento para <br />
                         seus pés!
                     </p>

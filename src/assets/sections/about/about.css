@@ -9,7 +9,11 @@
     margin-bottom: 90px;
 }
 
-.title-clinica h2,
+h1{
+    font-size: 2.3rem;
+}
+
+.title-clinica h1,
 .title-clinica p {
     margin: 0; /* margem entre o h2 e o p */
 }
@@ -31,10 +35,6 @@
     flex: 1; /* ocupa todo o espaço disponível */
 }
 
-.txt_about h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
 
 .txt_about p {
     margin-bottom: 1rem;
