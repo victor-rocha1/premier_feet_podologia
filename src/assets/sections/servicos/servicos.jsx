@@ -3,9 +3,8 @@ import './servicos.css';
 
 function Servicos() {
     return (
-        <div className="servicos-container">
-            <h2 className="section-title">NOSSOS SERVIÇOS</h2>
-
+        <section className="servicos-container">
+            <h2 className="section-title container">NOSSOS SERVIÇOS</h2>
             <div className="card-container"> 
                 <Card txt="teste" />
                 <Card txt="teste" />
@@ -14,7 +13,7 @@ function Servicos() {
                 <Card txt="teste" />
                 <Card txt="teste" />
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -1,16 +1,17 @@
-.endereco-section {
-    max-width: 85%;
-    margin: 60px auto;
-    text-align: center;
-}
-
+/* Container que alinha o texto e o mapa */
 .endereco-content {
     display: flex;
     align-items: center;
+    justify-content: center; 
     gap: 40px;
+    width: 100%;
+    flex-wrap: wrap; 
 }
 
+/* Informações do Endereço */
 .endereco-info {
+    flex: 1; 
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,8 +42,10 @@
     text-decoration: none;
 }
 
+/* Mapa */
 .map-container {
-    width: 700px;
+    flex: 1.5;
+    min-width: 300px; 
 }
 
 .map-container iframe {
@@ -51,6 +54,7 @@
     border: 0;
     border-radius: 15px;
 }
+
 
 @media (max-width: 900px) {
     .endereco-content {

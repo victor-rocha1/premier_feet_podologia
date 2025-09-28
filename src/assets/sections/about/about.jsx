@@ -2,17 +2,12 @@ import './about.css';
 
 function About() {
     return (
-        <>
-            <div className="about">
-                <div className="title-clinica">
-                    <h1>PREMIER FEET PODOLOGIA</h1>
-                    <p>O melhor atendimento para <br />
-                        seus pés!
-                    </p>
-                </div>
+        <section className="about container">
+            <div className="title-clinica">
+                <h1>PREMIER FEET PODOLOGIA</h1>
+                <p>O melhor atendimento para <br /> seus pés!</p>
             </div>
 
-            {/* container flex para texto e card */}
             <div className="about-container">
                 <div className="txt_about">
                     <h2>SOBRE A CLÍNICA</h2>
@@ -29,16 +24,12 @@ function About() {
                         Venha nos conhecer e sinta a diferença de estar em boas mãos. Porque quando seus pés estão bem, todo o seu corpo agradece.
                     </p>
                 </div>
-
-                {/* Card duplo: branco na frente, verde atrás */}
                 <div className="div-card">
-                    <div className="card card-green"></div>
-                    <div className="card card-white">
-                        <p>Foto</p>
-                    </div>
+                    <div className="card card-verde-agua"></div>
+                    <div className="card card-white"><p>Foto</p></div>
                 </div>
             </div>
-        </>
+        </section>
     );
 }
 

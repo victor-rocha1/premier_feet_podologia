@@ -5,12 +5,12 @@ function Endereco() {
     const urlGoogleMaps = `https://www.google.com/maps/dir/?api=1&destination=Avenida+Miguel+Perrela+330,+Belo+Horizonte,+Brazil+31330290`;
 
     return (
-        <section className="endereco-section">
+        <section className="endereco-section container">
             <h2 className="section-title">NOSSO ENDEREÇO</h2>
 
             <div className="endereco-content">
                 <div className="endereco-info">
-                    <p className="endereco-text">
+                    <p className="endereco-text container">
                         Avenida Miguel Perrela 330, Belo <br />
                         Horizonte, Brazil 31330290
                     </p>
