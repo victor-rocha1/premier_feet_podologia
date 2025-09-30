@@ -41,18 +41,33 @@ function NavBar() {
         </nav>
       </header>
       
-      {/* Botão do menu com as 3 barrinhas dentro, como no design original */}
-      <button 
-        className={`menu-lateral ${menuAberto ? 'open' : ''}`} 
-        onClick={toggleMenu} 
-        aria-label="Abrir ou fechar menu"
-      >
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </button>
+
+
+      {/* Botão do menu hamburguer (fora da sidebar) */}
+      {!menuAberto && (
+        <button 
+          className="menu-lateral" 
+          onClick={toggleMenu} 
+          aria-label="Abrir ou fechar menu"
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </button>
+      )}
+
 
       <div className={`sidebar ${menuAberto ? 'open' : ''}`}>
+        {menuAberto && (
+          <button 
+            className="menu-lateral open" 
+            onClick={toggleMenu} 
+            aria-label="Fechar menu"
+            style={{position: 'absolute', top: 18, right: 18, background: 'none', border: 'none', padding: 0, cursor: 'pointer'}}
+          >
+            <i className="bi bi-x-lg" style={{fontSize: 28, color: '#222'}}></i>
+          </button>
+        )}
         <a href="#about" onClick={toggleMenu}>Sobre</a>
         <a href="#nossos-servicos" onClick={toggleMenu}>Nossos Serviços</a>
         <a href="#endereco" onClick={toggleMenu}>Endereço</a>

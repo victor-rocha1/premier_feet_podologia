@@ -1,103 +1,134 @@
-.title-clinica {
-    text-align: center;
-    margin-bottom: 90px; 
-}
+ .title-clinica {
+     text-align: center;
+     margin: 0;
+ }
 
-h1 {
-    font-size: 2.3rem;
-}
+ h1 {
+     font-size: 2.3rem;
+ }
 
-.title-clinica h2,
-.title-clinica p {
-    margin: 0;
-}
+ .title-clinica h2,
+ .title-clinica p {
+     margin: 0;
+ }
 
-.about-container {
-    width: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-    padding: 1rem;
-}
+ .about-container {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 3rem;
+     padding: 1rem;
+ }
 
-/* Texto */
-.txt_about{
-    flex: 1; /* ocupa todo o espaço disponível */
-}
+ /* Texto */
+ .txt_about {
+     flex: 1;
+     /* ocupa todo o espaço disponível */
+ }
 
-.txt_about h2 {
-    font-weight: normal;
-    font-size: 2.1rem;
-    margin-bottom: 1rem;
-}
+ .txt_about h2 {
+     font-weight: normal;
+     font-size: 2.1rem;
+     margin-bottom: 1rem;
+ }
 
-.txt_about p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-}
+ .txt_about p {
+     margin-bottom: 1rem;
+     line-height: 1.7;
+ }
 
-.div-card {
-    position: relative;
-    width: 437px; /* largura fixa */
-    height: 600px; /* altura fixa */
-}
+ .div-card {
+     position: relative;
+     width: 437px;
+     /* largura fixa */
+     height: 600px;
+     /* altura fixa */
+     max-width: 100%;
+ }
 
-/* Card base */
-.card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
+ /* Card base */
+ .card {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     border-radius: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.3s ease;
+ }
 
-/* Card branco */
-.card-white {
-    background-color: #fff;
-    z-index: 1;
-    color: #444;
-    font-style: italic;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+ /* Card branco */
+ .card-white {
+     background-color: #fff;
+     z-index: 1;
+     color: #444;
+     font-style: italic;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
 
-.card-verde-agua {
-    background-color: var(--verde-agua);
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    top: 15px;
-    left: 15px;
-    z-index: 0;
-}
+ .card-verde-agua {
+     background-color: var(--verde-agua);
+     width: calc(100% - 10px);
+     height: calc(100% - 10px);
+     top: 15px;
+     left: 15px;
+     z-index: 0;
+ }
 
-/* Responsivo */
-@media (max-width: 1100px) {
-    .div-card {
-        width: 350px;
-        height: 480px;
-    }
-}
+ /* Responsivo */
+ @media (max-width: 1100px) {
+     .div-card {
+         width: 350px;
+         height: 480px;
+     }
+ }
 
 
 
-@media (max-width: 900px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0;
-    }
+ @media (max-width: 900px) {
+     .about-container {
+         flex-direction: column;
+         align-items: center;
+         margin-top: 0;
+         padding-left: 5vw;
+         padding-right: 5vw;
+         box-sizing: border-box;
+         justify-content: center;
+         margin-bottom: 40px;
+     }
 
-    .title-clinica {
-        font-size: 1rem;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
+     .title-clinica {
+         font-size: 1rem;
+         margin-top: 60px;
+         margin-bottom: 60px;
+     }
 
-}
+     .section-title {
+         margin-bottom: 10px;
+         font-size: 1.2rem;
+     }
+
+     .txt_about h2 {
+         font-size: 1.4rem;
+     }
+
+     .txt_about p {
+         margin-bottom: 1rem;
+         font-size: .9rem;
+         line-height: 1.7;
+     }
+
+
+     .div-card {
+         width: 100%;
+         max-width: 350px;
+         height: 320px;
+     }
+
+ }

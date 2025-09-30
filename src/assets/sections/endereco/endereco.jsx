@@ -10,7 +10,7 @@ function Endereco() {
 
             <div className="endereco-content">
                 <div className="endereco-info">
-                    <p className="endereco-text container">
+                    <p className="endereco-text">
                         Avenida Miguel Perrela 330, Belo <br />
                         Horizonte, Brazil 31330290
                     </p>

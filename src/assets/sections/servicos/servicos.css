@@ -1,0 +1,14 @@
+/* Espaçamento extra entre o título e os cards */
+.servicos-container .section-title {
+	margin-bottom: 120px !important;
+}
+@media (max-width: 900px) {
+	.servicos-container .section-title {
+		margin-bottom: 32px !important;
+	}
+}
+@media (max-width: 600px) {
+	.servicos-container .section-title {
+		margin-bottom: 18px !important;
+	}
+}

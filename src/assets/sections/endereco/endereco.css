@@ -18,11 +18,12 @@
     justify-content: center;
 }
 
-.endereco-text {
+ .endereco-text {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.7;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .como-chegar-btn {
@@ -59,9 +60,17 @@
 @media (max-width: 900px) {
     .endereco-content {
         flex-direction: column;
+        gap: 16px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
     }
 
-    .map-container {
+
+    .endereco-info, .map-container {
+        min-width: 0;
         width: 100%;
     }
 

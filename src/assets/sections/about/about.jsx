@@ -4,7 +4,7 @@ function About() {
     return (
         <section className="about container">
             <div className="title-clinica">
-                <h1>PREMIER FEET PODOLOGIA</h1>
+                <h1 className="section-title">PREMIER FEET PODOLOGIA</h1>
                 <p>O melhor atendimento para <br /> seus pés!</p>
             </div>
 
