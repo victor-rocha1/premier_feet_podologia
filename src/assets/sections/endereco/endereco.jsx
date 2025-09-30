@@ -5,7 +5,7 @@ function Endereco() {
     const urlGoogleMaps = `https://www.google.com/maps/dir/?api=1&destination=Avenida+Miguel+Perrela+330,+Belo+Horizonte,+Brazil+31330290`;
 
     return (
-        <section className="endereco-section container">
+        <section id="endereco" className="endereco-section container">
             <h2 className="section-title">NOSSO ENDEREÇO</h2>
 
             <div className="endereco-content">
