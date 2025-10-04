@@ -5,8 +5,14 @@ body.menu-open {
 header {
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: relative;
-  z-index: 999; /* z-index baixo para que o overlay e o menu fiquem na frente dele. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(255,255,255,0.7); /* branco translúcido */
+  backdrop-filter: blur(12px); /* efeito de desfoque */
+  -webkit-backdrop-filter: blur(12px); /* suporte Safari */
+  transition: background 0.3s;
 }
 
 /* alinha os itens (logo, links, botão) com espaço entre eles. */
@@ -18,6 +24,11 @@ header {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* Espaço para o conteúdo não ficar escondido atrás da navbar fixa */
+body {
+  padding-top: 80px;
 }
 
 /* Estilo do logo dentro da navbar. */
@@ -55,9 +66,9 @@ header {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -5px;
+  max-width: 1280px;
   left: 0;
-  background-color: var(--verde-agua);
+  margin: 0 auto;
   transition: width 0.4s ease;
 }
 
@@ -152,7 +163,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  width: 280px;
+  width: 40%;
   height: 100vh;
   background-color: var(--branco);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);

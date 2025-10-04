@@ -6,6 +6,33 @@ import imgChat from './icon-message.png';
 function NavBar() {
   const [menuAberto, setMenuAberto] = useState(false);
 
+  // Função de scroll suave customizada
+  function scrollToSection(e, id) {
+    e.preventDefault();
+    const target = document.getElementById(id);
+    if (!target) return;
+    const startY = window.scrollY;
+    const endY = target.getBoundingClientRect().top + window.scrollY;
+    const duration = 900; // ms (ajuste para mais lento ou mais rápido)
+    let startTime = null;
+
+    function animateScroll(currentTime) {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+      // easeInOutQuad
+      const ease = progress < 0.5
+        ? 2 * progress * progress
+        : -1 + (4 - 2 * progress) * progress;
+      window.scrollTo(0, startY + (endY - startY) * ease);
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
+    }
+    requestAnimationFrame(animateScroll);
+    setMenuAberto(false); // Fecha o menu lateral se aberto
+  }
+
   const toggleMenu = () => {
     setMenuAberto(!menuAberto);
   };
@@ -40,14 +67,12 @@ function NavBar() {
           </a>
         </nav>
       </header>
-      
-
 
       {/* Botão do menu hamburguer (fora da sidebar) */}
       {!menuAberto && (
-        <button 
-          className="menu-lateral" 
-          onClick={toggleMenu} 
+        <button
+          className="menu-lateral"
+          onClick={toggleMenu}
           aria-label="Abrir ou fechar menu"
         >
           <div className="bar"></div>
@@ -56,24 +81,23 @@ function NavBar() {
         </button>
       )}
 
-
       <div className={`sidebar ${menuAberto ? 'open' : ''}`}>
         {menuAberto && (
-          <button 
-            className="menu-lateral open" 
-            onClick={toggleMenu} 
+          <button
+            className="menu-lateral open"
+            onClick={toggleMenu}
             aria-label="Fechar menu"
-            style={{position: 'absolute', top: 18, right: 18, background: 'none', border: 'none', padding: 0, cursor: 'pointer'}}
+            style={{ position: 'absolute', top: 18, right: 18, background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
           >
-            <i className="bi bi-x-lg" style={{fontSize: 28, color: '#222'}}></i>
+            <i className="bi bi-x-lg" style={{ fontSize: 28, color: '#222' }}></i>
           </button>
         )}
-        <a href="#about" onClick={toggleMenu}>Sobre</a>
-        <a href="#nossos-servicos" onClick={toggleMenu}>Nossos Serviços</a>
-        <a href="#endereco" onClick={toggleMenu}>Endereço</a>
-        <a href="#duvidas" onClick={toggleMenu}>Dúvidas</a>
+  <a href="#about" onClick={toggleMenu}>Sobre</a>
+  <a href="#nossos-servicos" onClick={toggleMenu}>Nossos Serviços</a>
+  <a href="#endereco" onClick={toggleMenu}>Endereço</a>
+  <a href="#duvidas" onClick={toggleMenu}>Dúvidas</a>
       </div>
-      
+
       <div className={`overlay ${menuAberto ? 'active' : ''}`} onClick={toggleMenu}></div>
     </>
   );
