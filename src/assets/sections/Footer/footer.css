@@ -1,0 +1,134 @@
+footer {
+    background: var(--verde-agua);
+    color: var(--branco); 
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 -16px 48px -4px rgba(0,0,0,0.32);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    gap: 20px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+    display: block; 
+}
+
+.copyright {
+    display: flex;
+    gap: 0.5em;
+}
+
+.copyright p,
+.footer-hours p,
+.footer-contact a {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact h4,
+.footer-hours h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.footer-contact a {
+    color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-contact a:hover {
+    opacity: 0.8;
+}
+
+.footer-hours p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* --- RESPONSIVIDADE TABLET (Layout de 2 Linhas) --- */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 16px; 
+        align-items: center;
+    }
+
+    /* --- Primeira Linha --- */
+    .footer-logo { order: 1; }
+    .footer-contact { order: 2; }
+    .footer-hours { order: 3; }
+
+    .footer-contact h4, .footer-hours h4,
+    .footer-contact a, .footer-hours p {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    /* --- Segunda Linha --- */
+    .copyright {
+        order: 4;
+        font-size: 0.8rem;
+        margin-top: 0; 
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .copyright p {
+        margin: 0;
+    }
+}
+
+/* --- CELULAR --- */
+@media (max-width: 420px) {
+    .footer-content {
+        /* Aproxima as colunas para ganhar espaço */
+        column-gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Reduz o tamanho da logo */
+    .footer-logo img {
+        width: 55px;
+    }
+
+    /* Reduz o tamanho de TODAS as fontes de forma agressiva */
+    .footer-contact h4,
+    .footer-hours h4 {
+        font-size: 0.7rem; 
+        margin-bottom: 6px;
+    }
+
+    .footer-contact a,
+    .footer-hours p {
+        font-size: 0.65rem; 
+        gap: 6px; 
+    }
+
+    /* Reduz o tamanho dos ícones */
+    .footer-content i.bi {
+        font-size: 0.7rem;
+    }
+
+    .copyright p{
+        font-size: 0.7rem;
+    }
+}

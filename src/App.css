@@ -32,7 +32,7 @@ html {
     margin-bottom: 18px;
   }
 }
-/* Ajuste específico para o título de NOSSOS SERVIÇOS (igual ao de ENDEREÇO) */
+
 /* Ajuste específico para o título de NOSSOS SERVIÇOS (igual ao de ENDEREÇO) */
 .servicos-container .section-title {
   font-size: 1.5rem;
@@ -59,6 +59,7 @@ html {
 }
 
 body {
+  margin: 0;
   overflow-x: hidden;
 }
 
