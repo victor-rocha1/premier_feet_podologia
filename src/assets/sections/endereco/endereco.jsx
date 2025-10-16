@@ -24,9 +24,11 @@ function Endereco() {
                 <div className="map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0511130931436!2d-43.9977229!3d-19.880063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691db1d69ac6b%3A0xe7cf1a847746a04c!2sPremier%20Feet%20Podologia%20Castelo!5e0!3m2!1spt-BR!2sbr!4v1758916630941!5m2!1spt-BR!2sbr"
-                        allowfullscreen="" l
-                        oading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Localização"
+                        ></iframe>
                 </div>
             </div>
         </section>
