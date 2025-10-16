@@ -2,7 +2,6 @@ import './footer.css';
 import logo from '../NavBar/logo.png';
 
 function Footer() {
-    const instagramUrl = "https://www.instagram.com/seu_perfil";
     const instaUrl = 'https://www.instagram.com/premierfeet.podologia/';
     const phoneNumber = "31971024799";
     const whatsappLink = `https://wa.me/55${phoneNumber}`;
@@ -27,7 +26,7 @@ function Footer() {
                             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-whatsapp"></i> (31) 97102-4799
                             </a>
-                            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+                            <a href={instaUrl} target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-instagram"></i> premierfeet.podologia
                             </a>
                         </div>
