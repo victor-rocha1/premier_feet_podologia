@@ -1,26 +1,970 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <link rel="icon" type="image/png" href="./assets/logo-CrWLGpH0.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Fonte Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="theme-color" content="#0C7D81" />
+  <meta
+    name="description"
+    content="Premier Feet Podologia em Belo Horizonte (Bairro Castelo). Atendimento humanizado e especializado em pés diabéticos, unhas encravadas, calos, fissuras, micoses e hidratação profunda."
+  />
+
+  <!-- Tipografia Google Fonts: Inter e Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..800;1,14..32,300..800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Folha de estilos principal (CSS3 puro e modular) -->
 
-  <title>Premier Feet Care Podologia</title>
-  <script type="module" crossorigin src="/premier_feet_podologia/assets/index-CY3dER3k.js"></script>
-  <link rel="stylesheet" crossorigin href="/premier_feet_podologia/assets/index-CF0UXRXT.css">
+  <title>Premier Feet Podologia | Saúde e Bem-estar para seus Pés em BH</title>
+  <script type="module" crossorigin src="./assets/index-CrWHSDfV.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CxP3EbiE.css">
 </head>
 
 <body>
-  <div id="root"></div>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a href="#" class="brand-link" aria-label="Premier Feet Podologia - Voltar ao início">
+        <span class="brand-logo-badge">
+          <img src="./assets/logo-CrWLGpH0.png" alt="Logotipo Premier Feet Podologia" width="48" height="48" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Premier Feet</span>
+          <span class="brand-sub">Podologia</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">Sobre</a>
+        <a href="#nossos-servicos">Nossos Serviços</a>
+        <a href="#endereco">Endereço</a>
+        <a href="#duvidas">Dúvidas</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#contato" class="contact-btn">
+          <span>ENTRE EM CONTATO</span>
+          <img class="btn-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFrSURBVHgB3VWBTcQwDHQQA2QDsgHdgG4AG8AGsEHLBH0meDEBI7S/wTNB2YDfwDiK8++W1J8UISFOsqI258TnxA7Af4HJISGipaEmuyKz/PudbDDGHOAnoMUrsh51bMmcto5RNmhpaMSvgWxPdmA1FQR1Ec+kqoUCBRsRacfpSvEcKzmqyt2gZYdPsptMn5r5yBlQyU5ElbXBbKOISiNui2R/9+/Yv18iWBGJgxWYrWFThFqNIn+jnte5jf8uxPw1j3vh4M+oicrOfc/8XWqTKE9W8D1Zy2POt/Q/putSmyS8Fo5LwQaQ5LvfOhM5aUVBWVgBnNaZXSK9MeERViCrzmhyXFPt7FufrTMMbd1jhELgtHc1GrGbS2XnZikyPsdJx07xjHDwChyEe+8P7QGm13kA/T15ovfkBRQVMp8So7gMKfgU9ah1XTgVozxoH+kGwvu9i2mB0HYqVuE5H2S77DceTz2o+Fb9GXwBSm0KasEodvIAAAAASUVORK5CYII=" alt="" aria-hidden="true" width="20" height="20" />
+        </a>
+
+        <button
+          type="button"
+          id="menu-toggle-btn"
+          class="menu-lateral"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="mobile-sidebar"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MENU LATERAL RESPONSIVO (MOBILE) -->
+  <aside id="mobile-sidebar" class="sidebar" aria-hidden="true" aria-label="Menu de navegação móvel">
+    <div class="sidebar-header">
+      <a href="#" class="brand-link">
+        <span class="brand-logo-badge">
+          <img src="./assets/logo-CrWLGpH0.png" alt="Logotipo Premier Feet Podologia" width="42" height="42" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Premier Feet</span>
+          <span class="brand-sub">Podologia</span>
+        </span>
+      </a>
+      <button type="button" id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Links do menu móvel">
+      <a href="#about">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+        </svg>
+        Sobre a Clínica
+      </a>
+      <a href="#nossos-servicos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+          <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+          <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+          <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+        </svg>
+        Nossos Serviços
+      </a>
+      <a href="#endereco">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        Nosso Endereço
+      </a>
+      <a href="#duvidas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+        Dúvidas Frequentes
+      </a>
+      <a href="#contato">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        Entre em Contato
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a
+        href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20na%20Premier%20Feet%20Podologia."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="sidebar-whatsapp-btn"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        Agendar pelo WhatsApp
+      </a>
+      <p class="sidebar-hours">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        Quarta a Sábado • 8h às 17h
+      </p>
+    </div>
+  </aside>
+
+  <div id="menu-overlay" class="overlay" aria-hidden="true"></div>
+
+  <main id="conteudo-principal">
+    <!-- 1. HERO SECTION — APRESENTAÇÃO INICIAL -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            <span>Premier Feet Podologia • Belo Horizonte</span>
+          </div>
+
+          <h1 class="hero-title">
+            O melhor atendimento para a <span>saúde e o bem-estar</span> dos seus pés.
+          </h1>
+
+          <p class="hero-description">
+            Atendimento humanizado, seguro e individualizado em um ambiente acolhedor e higienizado.
+            Especialização em cuidados com pés diabéticos e tratamentos podológicos completos.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20na%20Premier%20Feet%20Podologia."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Agendar pelo WhatsApp</span>
+            </a>
+
+            <a href="#nossos-servicos" class="btn-secondary">
+              <span>Conhecer Serviços</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="hero-highlight-item">
+              <div class="hero-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="hero-highlight-text">
+                <strong>Pés Diabéticos</strong>
+                <span>Cuidado especializado</span>
+              </div>
+            </div>
+
+            <div class="hero-highlight-item">
+              <div class="hero-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="hero-highlight-text">
+                <strong>Quarta a Sábado</strong>
+                <span>Atendimento das 8h às 17h</span>
+              </div>
+            </div>
+
+            <div class="hero-highlight-item">
+              <div class="hero-highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="hero-highlight-text">
+                <strong>Belo Horizonte • MG</strong>
+                <span>Av. Miguel Perrela, 330</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-backdrop" aria-hidden="true"></div>
+            <div class="hero-photo-card">
+              <img
+                src="./assets/podologa-profissional-DSdrr9ss.webp"
+                alt="Responsável técnica da Premier Feet Podologia em consultório clínico moderno e higienizado"
+                class="hero-photo-img"
+                width="960"
+                height="600"
+                fetchpriority="high"
+              />
+            </div>
+
+            <div class="hero-floating-card hero-floating-card--bottom">
+              <div class="hero-floating-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+              </div>
+              <div class="hero-floating-info">
+                <strong>Ciência, Prevenção e Carinho</strong>
+                <span>Atendimento humanizado desde maio de 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO SOBRE A CLÍNICA E DIFERENCIAIS -->
+    <section id="about" class="about-section container">
+      <div class="about-grid">
+        <div class="txt_about reveal">
+          <span class="section-eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+            Sobre a Clínica
+          </span>
+
+          <h2>Cuidado minucioso, seguro e totalmente personalizado</h2>
+
+          <p>
+            Desde <strong>maio de 2023</strong>, a <strong>Premier Feet Podologia</strong> tem sido referência em saúde e bem-estar para os pés. Fundada com o propósito de oferecer um atendimento humanizado e altamente especializado, nossa clínica é liderada por uma podóloga experiente e apaixonada pelo que faz.
+          </p>
+
+          <p>
+            Nossa responsável técnica é <strong>especializada no tratamento de pés diabéticos</strong>, oferecendo um cuidado minucioso, seguro e totalmente personalizado para pacientes que necessitam de atenção especial. Com conhecimento técnico avançado e constante atualização na área, ela garante um atendimento que une ciência, prevenção e carinho em cada procedimento.
+          </p>
+
+          <p>
+            Além do cuidado com pés diabéticos, a Premier Feet Podologia também oferece tratamentos completos para <strong>calos, unhas encravadas, fissuras, micose, hidratação profunda</strong>, entre outros. Tudo isso em um ambiente acolhedor, higienizado e com equipamentos de alta qualidade, pensado para proporcionar conforto e segurança.
+          </p>
+
+          <div class="about-quote">
+            “Venha nos conhecer e sinta a diferença de estar em boas mãos. Porque quando seus pés estão bem, todo o seu corpo agradece.”
+          </div>
+        </div>
+
+        <div class="diferenciais-wrapper reveal reveal-delay-1">
+          <div class="diferenciais-grid">
+            <article class="diferencial-card">
+              <div class="diferencial-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                </svg>
+              </div>
+              <h3>Atendimento Humanizado</h3>
+              <p>Escuta atenta, acolhimento e cuidado individualizado em todas as etapas do seu atendimento.</p>
+            </article>
+
+            <article class="diferencial-card">
+              <div class="diferencial-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3>Pés Diabéticos</h3>
+              <p>Atenção especializada, preventiva e segura para pacientes que exigem cuidado redobrado.</p>
+            </article>
+
+            <article class="diferencial-card">
+              <div class="diferencial-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4"></path>
+                  <path d="m16.2 7.8 2.9-2.9"></path>
+                  <path d="M18 12h4"></path>
+                  <path d="m16.2 16.2 2.9 2.9"></path>
+                  <path d="M12 18v4"></path>
+                  <path d="m4.9 19.1 2.9-2.9"></path>
+                  <path d="M2 12h4"></path>
+                  <path d="m4.9 4.9 2.9 2.9"></path>
+                </svg>
+              </div>
+              <h3>Ambiente Higienizado</h3>
+              <p>Rigoroso padrão de higiene e espaço planejado para oferecer tranquilidade e bem-estar.</p>
+            </article>
+
+            <article class="diferencial-card">
+              <div class="diferencial-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3>Alta Qualidade</h3>
+              <p>Equipamentos modernos e constante atualização técnica para procedimentos confortáveis.</p>
+            </article>
+          </div>
+
+          <div class="especialidade-banner">
+            <div class="especialidade-banner-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="especialidade-banner-text">
+              <h3>Compromisso com o seu Conforto</h3>
+              <p>
+                Cada procedimento na Premier Feet Podologia é realizado com atenção aos detalhes, unindo conhecimento técnico, prevenção e bem-estar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO NOSSOS SERVIÇOS -->
+    <section id="nossos-servicos" class="servicos-section">
+      <div class="servicos-container container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+            </svg>
+            Procedimentos Podológicos
+          </span>
+          <h2 class="section-title">NOSSOS SERVIÇOS</h2>
+          <p class="section-subtitle">
+            Tratamentos especializados realizados com equipamentos de alta qualidade, higiene rigorosa e atenção individualizada às necessidades dos seus pés.
+          </p>
+        </div>
+
+        <div class="card-container">
+          <!-- Serviço 1: Pés Diabéticos -->
+          <article class="card-servicos card-destaque reveal">
+            <div class="card-servicos-top">
+              <div class="card-servicos-header">
+                <div class="card-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="M12 8v8"></path>
+                    <path d="M8 12h8"></path>
+                  </svg>
+                </div>
+                <span class="card-tag">Especialidade</span>
+              </div>
+              <h3>Atendimento para Pés Diabéticos</h3>
+              <p>
+                Cuidado minucioso, preventivo e totalmente personalizado para pacientes que necessitam de atenção especial, priorizando a segurança e a integridade da pele e das unhas.
+              </p>
+            </div>
+            <div class="card-servicos-footer">
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20especializado%20para%20p%C3%A9s%20diab%C3%A9ticos."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <span>Solicitar informações</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Serviço 2: Unhas Encravadas -->
+          <article class="card-servicos reveal reveal-delay-1">
+            <div class="card-servicos-top">
+              <div class="card-servicos-header">
+                <div class="card-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0-6 6v12h12V9a6 6 0 0 0-6-6Z"></path>
+                    <path d="M9 9a3 3 0 0 1 6 0v3H9V9Z"></path>
+                  </svg>
+                </div>
+                <span class="card-tag">Tratamento</span>
+              </div>
+              <h3>Tratamento de Unhas Encravadas</h3>
+              <p>
+                Atendimento técnico e cuidadoso para aliviar o desconforto causado por unhas encravadas, promovendo o corte correto e a recuperação saudável das lâminas ungueais.
+              </p>
+            </div>
+            <div class="card-servicos-footer">
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20para%20tratamento%20de%20unha%20encravada."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <span>Solicitar informações</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Serviço 3: Tratamento de Calos -->
+          <article class="card-servicos reveal reveal-delay-2">
+            <div class="card-servicos-top">
+              <div class="card-servicos-header">
+                <div class="card-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <line x1="12" y1="3" x2="12" y2="5"></line>
+                    <line x1="12" y1="19" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="card-tag">Conforto</span>
+              </div>
+              <h3>Tratamento de Calos</h3>
+              <p>
+                Remoção segura e delicada de calos e calosidades causadas pelo atrito ou pressão constante, devolvendo a maciez da pele e o bem-estar ao caminhar.
+              </p>
+            </div>
+            <div class="card-servicos-footer">
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento%20de%20calos."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <span>Solicitar informações</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Serviço 4: Cuidados com Fissuras -->
+          <article class="card-servicos reveal">
+            <div class="card-servicos-top">
+              <div class="card-servicos-header">
+                <div class="card-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path>
+                  </svg>
+                </div>
+                <span class="card-tag">Recuperação</span>
+              </div>
+              <h3>Cuidados com Fissuras</h3>
+              <p>
+                Tratamento direcionado para rachaduras e ressecamento acentuado nos calcanhares e na planta dos pés, auxiliando na recuperação e proteção da pele.
+              </p>
+            </div>
+            <div class="card-servicos-footer">
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20cuidados%20com%20fissuras%20nos%20p%C3%A9s."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <span>Solicitar informações</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Serviço 5: Cuidados relacionados a Micoses -->
+          <article class="card-servicos reveal reveal-delay-1">
+            <div class="card-servicos-top">
+              <div class="card-servicos-header">
+                <div class="card-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+                <span class="card-tag">Saúde e Prevenção</span>
+              </div>
+              <h3>Cuidados Relacionados a Micoses</h3>
+              <p>
+                Higienização técnica, preparo adequado das unhas e acompanhamento especializado com orientações preventivas para a saúde da pele e das lâminas ungueais.
+              </p>
+            </div>
+            <div class="card-servicos-footer">
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20cuidados%20relacionados%20a%20micoses."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <span>Solicitar informações</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Serviço 6: Hidratação Profunda -->
+          <article class="card-servicos reveal reveal-delay-2">
+            <div class="card-servicos-top">
+              <div class="card-servicos-header">
+                <div class="card-icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path>
+                    <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path>
+                  </svg>
+                </div>
+                <span class="card-tag">Bem-estar</span>
+              </div>
+              <h3>Hidratação Profunda</h3>
+              <p>
+                Cuidado nutritivo e revitalizante para pés ressecados, proporcionando suavidade imediata, renovação da textura da pele e sensação de leveza.
+              </p>
+            </div>
+            <div class="card-servicos-footer">
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20hidrata%C3%A7%C3%A3o%20profunda%20na%20Premier%20Feet%20Podologia."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-link"
+              >
+                <span>Solicitar informações</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="servicos-cta-box reveal">
+          <div class="servicos-cta-text">
+            <h3>Precisa de uma avaliação personalizada para os seus pés?</h3>
+            <p>Entre em contato pelo WhatsApp e tire suas dúvidas diretamente com nossa equipe.</p>
+          </div>
+          <a
+            href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Premier%20Feet%20Podologia."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Falar pelo WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO NOSSO ENDEREÇO -->
+    <section id="endereco" class="endereco-section container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Localização e Funcionamento
+        </span>
+        <h2 class="section-title">NOSSO ENDEREÇO</h2>
+        <p class="section-subtitle">
+          Espaço acolhedor, higienizado e de fácil acesso em Belo Horizonte, pensado para proporcionar conforto e segurança.
+        </p>
+      </div>
+
+      <div class="endereco-content">
+        <div class="endereco-info reveal">
+          <div class="endereco-info-list">
+            <div class="endereco-item">
+              <div class="endereco-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="endereco-item-body">
+                <span class="endereco-item-label">Endereço da Clínica</span>
+                <p class="endereco-text">
+                  Avenida Miguel Perrela, 330<br />
+                  Belo Horizonte, Minas Gerais
+                </p>
+                <p class="endereco-subtext">CEP 31330-290 • Bairro Castelo</p>
+              </div>
+            </div>
+
+            <div class="endereco-item">
+              <div class="endereco-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="endereco-item-body">
+                <span class="endereco-item-label">Horário de Funcionamento</span>
+                <p class="endereco-text">Quarta a Sábado</p>
+                <p class="endereco-subtext">Das 8h às 17h</p>
+              </div>
+            </div>
+
+            <div class="endereco-item">
+              <div class="endereco-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="endereco-item-body">
+                <span class="endereco-item-label">Canais de Atendimento</span>
+                <div class="endereco-contact-links">
+                  <a href="https://wa.me/5531971024799" target="_blank" rel="noopener noreferrer">
+                    WhatsApp: (31) 97102-4799
+                  </a>
+                  <a href="https://www.instagram.com/premierfeet.podologia/" target="_blank" rel="noopener noreferrer">
+                    Instagram: @premierfeet.podologia
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="endereco-actions">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Avenida+Miguel+Perrela+330,+Belo+Horizonte,+Brazil+31330290"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="como-chegar-btn"
+            >
+              <span>Como Chegar</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container reveal reveal-delay-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0511130931436!2d-43.9977229!3d-19.880063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa691db1d69ac6b%3A0xe7cf1a847746a04c!2sPremier%20Feet%20Podologia%20Castelo!5e0!3m2!1spt-BR!2sbr!4v1758916630941!5m2!1spt-BR!2sbr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de localização da Premier Feet Podologia na Avenida Miguel Perrela, 330, Belo Horizonte"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO DE PERGUNTAS FREQUENTES (#duvidas) -->
+    <section id="duvidas" class="duvidas-section">
+      <div class="container">
+        <div class="duvidas-layout">
+          <div class="duvidas-intro reveal">
+            <span class="section-eyebrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Tire suas Dúvidas
+            </span>
+            <h2>Perguntas Frequentes</h2>
+            <p>
+              Reunimos as principais informações sobre nosso atendimento, horários, localização e cuidados podológicos na Premier Feet Podologia.
+            </p>
+
+            <div class="duvidas-support-box">
+              <strong>Ainda tem alguma dúvida?</strong>
+              <span>Fale diretamente conosco pelo WhatsApp para receber orientação rápida.</span>
+              <a
+                href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20o%20atendimento%20na%20Premier%20Feet%20Podologia."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+              >
+                <span>Conversar no WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="faq-list reveal reveal-delay-1">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="true">
+                <span>Como posso agendar um atendimento na Premier Feet Podologia?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  O agendamento é realizado de forma prática e direta pelo nosso WhatsApp no número <strong>(31) 97102-4799</strong>. Basta clicar em qualquer um dos botões de contato do site para iniciar a conversa e verificar os horários disponíveis.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Quais são os dias e horários de funcionamento da clínica?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Atendemos de <strong>Quarta a Sábado, das 8h às 17h</strong>, sempre com atenção individualizada para garantir conforto, pontualidade e tranquilidade em cada procedimento.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>A clínica realiza atendimento especializado para pés diabéticos?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Sim. Nossa responsável técnica é especializada no tratamento de <strong>pés diabéticos</strong>, oferecendo um cuidado minucioso, preventivo, seguro e totalmente personalizado para pacientes que necessitam de atenção especial.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Quais procedimentos podológicos são oferecidos?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Além do atendimento especializado para pés diabéticos, realizamos tratamentos para <strong>unhas encravadas, calos, fissuras, cuidados relacionados a micoses e hidratação profunda</strong>, sempre em ambiente higienizado e com equipamentos de alta qualidade.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Onde a Premier Feet Podologia está localizada?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Estamos localizados na <strong>Avenida Miguel Perrela, 330, Belo Horizonte - MG, CEP 31330-290</strong> (Bairro Castelo). Você pode utilizar o botão “Como Chegar” na seção de endereço para abrir a rota diretamente no Google Maps.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SEÇÃO DE CONTATO DIRETO (#contato) -->
+    <section id="contato" class="contato-section container">
+      <div class="contato-card reveal">
+        <div class="contato-card-content">
+          <span class="contato-badge">Atendimento Humanizado • BH</span>
+          <h2>Cuide da saúde dos seus pés com quem é especialista</h2>
+          <p>
+            Agende seu horário ou solicite informações pelo WhatsApp. Estamos prontos para receber você com todo o conforto, higiene e atenção que seus pés merecem.
+          </p>
+        </div>
+
+        <div class="contato-card-actions">
+          <a
+            href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20na%20Premier%20Feet%20Podologia."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp-white"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>(31) 97102-4799 • WhatsApp</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/premierfeet.podologia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-instagram-outline"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>@premierfeet.podologia</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. RODAPÉ -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo-wrap" aria-label="Premier Feet Podologia - Início">
+            <img src="./assets/logo-CrWLGpH0.png" alt="Logo Premier Feet Podologia" width="68" height="68" loading="lazy" />
+            <div class="footer-brand-title">
+              <strong>Premier Feet</strong>
+              <span>Podologia</span>
+            </div>
+          </a>
+          <p>
+            Referência em saúde e bem-estar para os pés desde maio de 2023. Atendimento humanizado, seguro e especializado em Belo Horizonte.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#about">Sobre a Clínica</a></li>
+            <li><a href="#nossos-servicos">Nossos Serviços</a></li>
+            <li><a href="#endereco">Nosso Endereço</a></li>
+            <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="https://wa.me/5531971024799" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>(31) 97102-4799</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/premierfeet.podologia/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>premierfeet.podologia</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Funcionamento e Local</h4>
+          <ul class="footer-hours-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>Quarta a Sábado • 8h - 17h</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Avenida Miguel Perrela, 330, Belo Horizonte - MG, CEP 31330-290</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Premier Feet Podologia. Todos os direitos reservados.</p>
+        <p>Saúde, prevenção e cuidado especializado para seus pés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a
+    href="https://wa.me/5531971024799?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20na%20Premier%20Feet%20Podologia."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Conversar pelo WhatsApp com a Premier Feet Podologia"
+    title="Falar no WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </a>
+
+  <!-- Script Principal (Vanilla JavaScript) -->
 </body>
 
 </html>
