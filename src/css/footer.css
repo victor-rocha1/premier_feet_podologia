@@ -1,0 +1,192 @@
+footer {
+  background: linear-gradient(180deg, var(--verde-agua-escuro) 0%, var(--verde-agua-profundo) 100%);
+  color: var(--branco);
+  font-family: var(--fonte-corpo);
+  border-top: 4px solid var(--verde-agua);
+}
+
+.footer-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 64px 24px 28px 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--branco);
+}
+
+.footer-logo-wrap img {
+  width: 68px;
+  height: auto;
+}
+
+.footer-brand-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.footer-brand-title strong {
+  font-family: var(--fonte-titulo);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.footer-brand-title span {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.84);
+  max-width: 320px;
+}
+
+.footer-col h4 {
+  font-family: var(--fonte-titulo);
+  font-size: 0.96rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: var(--branco);
+  letter-spacing: 0.02em;
+}
+
+.footer-links,
+.footer-contact-list,
+.footer-hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a,
+.footer-contact-list a,
+.footer-hours-list li {
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+  transition: color var(--transicao-suave), transform var(--transicao-suave);
+}
+
+.footer-links a:hover,
+.footer-contact-list a:hover {
+  color: var(--branco);
+  transform: translateX(3px);
+}
+
+.footer-contact-list svg,
+.footer-hours-list svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #7CE2E6;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Botão Flutuante Discreto do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 990;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--verde-agua);
+  color: var(--branco);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(8, 94, 97, 0.38);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  transition: transform var(--transicao-suave), background-color var(--transicao-suave), box-shadow var(--transicao-suave);
+}
+
+.whatsapp-float svg {
+  width: 26px;
+  height: 26px;
+}
+
+.whatsapp-float:hover {
+  background-color: var(--verde-agua-escuro);
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 14px 32px rgba(8, 94, 97, 0.48);
+}
+
+/* Responsividade Rodapé */
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 48px 18px 24px 18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    bottom: 18px;
+    right: 18px;
+    width: 52px;
+    height: 52px;
+  }
+}

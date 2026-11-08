@@ -1,0 +1,189 @@
+.about-section {
+  background-color: var(--branco);
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 56px;
+  align-items: start;
+  width: 100%;
+}
+
+/* Coluna institucional */
+.txt_about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.txt_about .section-eyebrow {
+  margin-bottom: 2px;
+}
+
+.txt_about h2 {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.75rem, 2.8vw, 2.35rem);
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px 0;
+}
+
+.txt_about p {
+  margin: 0;
+  color: var(--cinza-texto);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.txt_about p strong {
+  color: var(--cinza-escuro);
+  font-weight: 600;
+}
+
+.about-quote {
+  margin-top: 8px;
+  padding: 18px 22px;
+  background-color: var(--branco-fundo);
+  border-left: 4px solid var(--verde-agua);
+  border-radius: 0 var(--raio-md) var(--raio-md) 0;
+  color: var(--cinza-escuro);
+  font-weight: 500;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Coluna Direita: Pilares de Diferenciais e Confiança */
+.diferenciais-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.diferencial-card {
+  background-color: var(--branco);
+  border: 1px solid var(--borda-neutra);
+  border-radius: var(--raio-md);
+  padding: 24px 20px;
+  box-shadow: var(--sombra-xs);
+  transition: transform var(--transicao-suave), border-color var(--transicao-suave), box-shadow var(--transicao-suave);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.diferencial-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--verde-agua-borda);
+  box-shadow: var(--sombra-suave);
+}
+
+.diferencial-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: var(--verde-agua-claro);
+  color: var(--verde-agua);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transicao-suave), color var(--transicao-suave);
+}
+
+.diferencial-card:hover .diferencial-icon {
+  background-color: var(--verde-agua);
+  color: var(--branco);
+}
+
+.diferencial-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.diferencial-card h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.diferencial-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--cinza-texto);
+  line-height: 1.55;
+}
+
+/* Destaque de especialidade clínica */
+.especialidade-banner {
+  background: linear-gradient(135deg, var(--verde-agua) 0%, var(--verde-agua-escuro) 100%);
+  color: var(--branco);
+  border-radius: var(--raio-md);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: var(--sombra-destaque);
+}
+
+.especialidade-banner-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.especialidade-banner-icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--branco);
+}
+
+.especialidade-banner-text h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.especialidade-banner-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsividade Sobre e Diferenciais */
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .especialidade-banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+}

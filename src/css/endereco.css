@@ -1,0 +1,341 @@
+.endereco-section {
+  background-color: var(--branco);
+}
+
+.endereco-content {
+  display: grid;
+  grid-template-columns: 0.95fr 1.25fr;
+  align-items: stretch;
+  gap: 36px;
+  width: 100%;
+}
+
+/* Card de Informações de Localização e Funcionamento */
+.endereco-info {
+  background-color: var(--branco-fundo);
+  border: 1px solid var(--borda-neutra);
+  border-radius: var(--raio-lg);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: var(--sombra-xs);
+}
+
+.endereco-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.endereco-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.endereco-item-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: var(--verde-agua-claro);
+  color: var(--verde-agua);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.endereco-item-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.endereco-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.endereco-item-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--verde-agua);
+}
+
+.endereco-text {
+  font-family: var(--fonte-titulo);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.endereco-subtext {
+  font-size: 0.92rem;
+  color: var(--cinza-texto);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.endereco-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.endereco-contact-links a {
+  text-decoration: none;
+  color: var(--cinza-texto);
+  font-size: 0.94rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color var(--transicao-suave);
+}
+
+.endereco-contact-links a:hover {
+  color: var(--verde-agua);
+}
+
+.endereco-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--borda-neutra);
+}
+
+.como-chegar-btn {
+  flex: 1;
+  min-width: 180px;
+  border: none;
+  font-weight: 600;
+  background-color: var(--verde-agua);
+  color: var(--branco);
+  border-radius: var(--raio-pill);
+  font-family: var(--fonte-corpo);
+  padding: 14px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--sombra-destaque);
+  transition: all var(--transicao-suave);
+}
+
+.como-chegar-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transicao-suave);
+}
+
+.como-chegar-btn:hover {
+  background-color: var(--verde-agua-escuro);
+  transform: translateY(-2px);
+}
+
+.como-chegar-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* Container do Mapa Google Maps */
+.map-container {
+  position: relative;
+  border-radius: var(--raio-lg);
+  overflow: hidden;
+  border: 1px solid var(--borda-neutra);
+  box-shadow: var(--sombra-suave);
+  background-color: var(--fundo-neutro);
+  min-height: 420px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+}
+
+/* Seção de Contato / Agendamento Direto (#contato) */
+.contato-section {
+  padding-top: 0;
+}
+
+.contato-card {
+  width: 100%;
+  background: linear-gradient(135deg, var(--verde-agua) 0%, var(--verde-agua-profundo) 100%);
+  color: var(--branco);
+  border-radius: var(--raio-xl);
+  padding: 52px 48px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 24px 48px -12px rgba(8, 94, 97, 0.28);
+  position: relative;
+  overflow: hidden;
+}
+
+.contato-card::after {
+  content: '';
+  position: absolute;
+  right: -60px;
+  bottom: -60px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+.contato-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contato-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--branco);
+  padding: 6px 14px;
+  border-radius: var(--raio-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contato-card-content h2 {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.65rem, 2.8vw, 2.25rem);
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.contato-card-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.65;
+  max-width: 540px;
+}
+
+.contato-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1;
+}
+
+.btn-whatsapp-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--branco);
+  color: var(--verde-agua-escuro);
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 16px 28px;
+  border-radius: var(--raio-pill);
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+  transition: transform var(--transicao-suave), box-shadow var(--transicao-suave);
+}
+
+.btn-whatsapp-white svg {
+  width: 20px;
+  height: 20px;
+  color: var(--verde-agua);
+}
+
+.btn-whatsapp-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+.btn-instagram-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--branco);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  font-size: 0.94rem;
+  padding: 14px 26px;
+  border-radius: var(--raio-pill);
+  text-decoration: none;
+  transition: background-color var(--transicao-suave), border-color var(--transicao-suave);
+}
+
+.btn-instagram-outline svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-instagram-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--branco);
+}
+
+/* Responsividade Endereço e Contato */
+@media (max-width: 960px) {
+  .endereco-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .map-container,
+  .map-container iframe {
+    min-height: 360px;
+  }
+
+  .contato-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 28px;
+    gap: 28px;
+  }
+
+  .contato-card-content {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .endereco-info {
+    padding: 26px 20px;
+  }
+
+  .endereco-text {
+    font-size: 1.05rem;
+  }
+
+  .map-container,
+  .map-container iframe {
+    min-height: 300px;
+  }
+
+  .contato-card {
+    padding: 32px 20px;
+    border-radius: var(--raio-lg);
+  }
+}

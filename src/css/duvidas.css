@@ -1,0 +1,175 @@
+.duvidas-section {
+  background-color: var(--branco-fundo);
+  border-top: 1px solid var(--borda-neutra);
+  border-bottom: 1px solid var(--borda-neutra);
+}
+
+.duvidas-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 52px;
+  align-items: start;
+  width: 100%;
+}
+
+.duvidas-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: sticky;
+  top: calc(var(--altura-header) + 28px);
+}
+
+.duvidas-intro h2 {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.75rem, 2.8vw, 2.3rem);
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.duvidas-intro p {
+  margin: 0;
+  color: var(--cinza-texto);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.duvidas-support-box {
+  margin-top: 10px;
+  background-color: var(--branco);
+  border: 1px solid var(--borda-neutra);
+  border-radius: var(--raio-md);
+  padding: 22px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--sombra-xs);
+}
+
+.duvidas-support-box strong {
+  font-size: 0.96rem;
+  color: var(--cinza-escuro);
+}
+
+.duvidas-support-box span {
+  font-size: 0.88rem;
+  color: var(--cinza-texto);
+}
+
+/* Lista Acordeão de Perguntas Frequentes */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.faq-item {
+  background-color: var(--branco);
+  border: 1px solid var(--borda-neutra);
+  border-radius: var(--raio-md);
+  overflow: hidden;
+  transition: border-color var(--transicao-suave), box-shadow var(--transicao-suave);
+}
+
+.faq-item.active {
+  border-color: var(--verde-agua-borda);
+  box-shadow: var(--sombra-suave);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: left;
+  font-family: var(--fonte-titulo);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--cinza-escuro);
+  cursor: pointer;
+  transition: color var(--transicao-suave);
+}
+
+.faq-question:hover {
+  color: var(--verde-agua);
+}
+
+.faq-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--fundo-neutro);
+  color: var(--verde-agua);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transicao-suave), background-color var(--transicao-suave), color var(--transicao-suave);
+}
+
+.faq-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+  background-color: var(--verde-agua);
+  color: var(--branco);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.faq-answer-inner {
+  padding: 0 24px 22px 24px;
+  color: var(--cinza-texto);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  border-top: 1px solid transparent;
+}
+
+.faq-item.active .faq-answer-inner {
+  border-top-color: var(--borda-neutra);
+  padding-top: 16px;
+}
+
+@media (max-width: 960px) {
+  .duvidas-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .duvidas-intro {
+    position: static;
+    align-items: center;
+    text-align: center;
+  }
+
+  .duvidas-support-box {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-question {
+    padding: 18px 18px;
+    font-size: 0.96rem;
+  }
+
+  .faq-answer-inner {
+    padding: 0 18px 18px 18px;
+  }
+}

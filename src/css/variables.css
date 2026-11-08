@@ -1,0 +1,45 @@
+:root {
+  /* Variáveis originais do projeto preservadas e refinadas */
+  --branco-fundo: #F8FAFA;
+  --branco: #FFFFFF;
+  --verde-agua: #0C7D81;
+  --cinza-escuro: #162527;
+
+  /* Paleta complementar da identidade visual */
+  --verde-agua-escuro: #085E61;
+  --verde-agua-profundo: #064447;
+  --verde-agua-claro: #E8F4F5;
+  --verde-agua-suave: rgba(12, 125, 129, 0.08);
+  --verde-agua-borda: rgba(12, 125, 129, 0.2);
+
+  /* Tons neutros para textos e superfícies */
+  --cinza-texto: #47585B;
+  --cinza-suave: #687A7D;
+  --borda-neutra: #E3ECEC;
+  --fundo-neutro: #F3F7F7;
+
+  /* Tipografia */
+  --fonte-titulo: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --fonte-corpo: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Sombras e elevação */
+  --sombra-xs: 0 2px 8px rgba(15, 38, 42, 0.04);
+  --sombra-suave: 0 12px 32px -8px rgba(12, 45, 48, 0.07), 0 4px 12px -2px rgba(12, 45, 48, 0.04);
+  --sombra-card-hover: 0 22px 44px -12px rgba(12, 125, 129, 0.15), 0 8px 18px -4px rgba(12, 45, 48, 0.06);
+  --sombra-destaque: 0 10px 24px -4px rgba(12, 125, 129, 0.28);
+
+  /* Raios de borda e transições */
+  --raio-sm: 10px;
+  --raio-md: 16px;
+  --raio-lg: 24px;
+  --raio-xl: 32px;
+  --raio-pill: 999px;
+  --transicao-suave: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  --altura-header: 82px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --altura-header: 72px;
+  }
+}

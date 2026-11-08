@@ -1,0 +1,305 @@
+.hero-section {
+  position: relative;
+  background: radial-gradient(circle at 85% 20%, rgba(12, 125, 129, 0.07) 0%, rgba(255, 255, 255, 0) 55%),
+              linear-gradient(180deg, var(--branco) 0%, var(--branco-fundo) 100%);
+  overflow: hidden;
+  border-bottom: 1px solid var(--borda-neutra);
+}
+
+.hero-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 64px 24px 88px 24px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 56px;
+}
+
+/* Coluna Esquerda: Conteúdo Textual */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--branco);
+  color: var(--verde-agua);
+  border: 1px solid var(--verde-agua-borda);
+  padding: 7px 16px;
+  border-radius: var(--raio-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: var(--sombra-xs);
+}
+
+.hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--verde-agua);
+}
+
+.hero-title {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2.15rem, 3.8vw, 3.25rem);
+  font-weight: 800;
+  color: var(--cinza-escuro);
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.hero-title span {
+  color: var(--verde-agua);
+}
+
+.hero-description {
+  font-size: 1.08rem;
+  color: var(--cinza-texto);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 560px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+/* Destaques rápidos abaixo do botão */
+.hero-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--borda-neutra);
+  width: 100%;
+}
+
+.hero-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-highlight-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--verde-agua-claro);
+  color: var(--verde-agua);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-highlight-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.hero-highlight-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.hero-highlight-text strong {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--cinza-escuro);
+}
+
+.hero-highlight-text span {
+  font-size: 0.78rem;
+  color: var(--cinza-suave);
+}
+
+/* Coluna Direita: Fotografia Profissional da Podóloga */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Evolução do elemento original .div-card / .card-verde-agua + .card-white */
+.hero-photo-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  z-index: 1;
+}
+
+.hero-photo-backdrop {
+  position: absolute;
+  inset: 14px -14px -14px 14px;
+  background: linear-gradient(135deg, var(--verde-agua) 0%, var(--verde-agua-escuro) 100%);
+  border-radius: var(--raio-lg);
+  z-index: -1;
+  opacity: 0.92;
+  transition: transform var(--transicao-suave);
+}
+
+.hero-photo-wrapper:hover .hero-photo-backdrop {
+  transform: translate(4px, 4px);
+}
+
+.hero-photo-card {
+  position: relative;
+  background-color: var(--branco);
+  border-radius: var(--raio-lg);
+  padding: 10px;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
+
+.hero-photo-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: right center;
+  border-radius: calc(var(--raio-lg) - 6px);
+  display: block;
+}
+
+/* Selos flutuantes discretos na composição da foto */
+.hero-floating-card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--verde-agua-borda);
+  border-radius: var(--raio-md);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 14px 32px rgba(12, 45, 48, 0.12);
+  z-index: 2;
+}
+
+.hero-floating-card--bottom {
+  bottom: -18px;
+  left: -16px;
+}
+
+.hero-floating-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: var(--verde-agua);
+  color: var(--branco);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero-floating-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-floating-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.hero-floating-info strong {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--cinza-escuro);
+}
+
+.hero-floating-info span {
+  font-size: 0.76rem;
+  color: var(--cinza-texto);
+}
+
+/* Responsividade Hero */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    padding: 48px 20px 72px 20px;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-description {
+    max-width: 640px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-highlights {
+    justify-content: center;
+    max-width: 680px;
+  }
+
+  .hero-highlight-item {
+    text-align: left;
+  }
+
+  .hero-photo-wrapper {
+    max-width: 600px;
+  }
+
+  .hero-floating-card--bottom {
+    left: 16px;
+    bottom: -14px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-container {
+    padding: 32px 18px 56px 18px;
+    gap: 36px;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: 20px;
+  }
+
+  .hero-photo-backdrop {
+    inset: 10px -8px -10px 10px;
+  }
+
+  .hero-floating-card--bottom {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 14px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
